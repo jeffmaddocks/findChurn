@@ -1,6 +1,5 @@
 import kaggle # https://github.com/Kaggle/kaggle-api
 import pandas as pd
-import numpy as np
 
 kaggle.api.authenticate()
 kaggle.api.dataset_download_files('blastchar/telco-customer-churn', unzip=True) # https://www.kaggle.com/blastchar/telco-customer-churn
