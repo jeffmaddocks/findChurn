@@ -2,3 +2,5 @@ kaggle
 pandas
 numpy
 pandas
+h2o
+matplotlib
