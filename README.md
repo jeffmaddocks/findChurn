@@ -1,5 +1,5 @@
 # findChurn
-Uses [AutoML from H2O](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) to identify customers at risk of attrition by analyzing historical patterns of churn. The result includes:
+Uses [AutoML from H2O](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.html) to identify customers at risk of attrition by analyzing historical patterns of churn. Organizations use churn predictions to direct interventions and minimize future churn. The process appends three additional columns of data to the customer record:
 
 | customerID | predict | No | Yes |
 | --- | --- | --- | --- |
