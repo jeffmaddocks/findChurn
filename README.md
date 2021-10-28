@@ -7,7 +7,7 @@ Uses [AutoML from H2O](https://docs.h2o.ai/h2o/latest-stable/h2o-docs/automl.htm
 | 7795-CFOCW | No | 0.959560 | 0.040440 |
 | 9305-CDSKC | Yes | 0.179969 | 0.820031 |
 
-The churn dataset contains the known, historical outcome in column "Churn." Customers who attrited have a value of "Yes," and customers who did not attrit have a value of "No." Churn will be used as the target (or response field) for the model.
+We will work from a [sample telco customer churn dataset](https://www.kaggle.com/blastchar/telco-customer-churn) from Kaggle. The dataset contains the known, historical outcome in column "Churn." Customers who attrited have a value of "Yes," and customers who did not attrit have a value of "No." Churn will be used as the target (or response field) for the model.
 
 Additional descriptive fields help the machine learning algorithms identify patterns of Churn behavior. These behavior patterns are saved into a model, which can also be thought of as a set of rules that helps classify customers as likely churners or not. The model therefore helps anticipate at-risk customers before they attrit. These descriptive data features include:
 
