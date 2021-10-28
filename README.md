@@ -21,6 +21,8 @@ Additional descriptive fields help the machine learning algorithms identify patt
 * type of internet service
 * has online security
 
+This example is in three parts:
+
 1. [Prepare the data](https://github.com/jeffmaddocks/findChurn/blob/master/prepare%20data.ipynb). This example leverages a sample telco customer churn dataset from Kaggle. From this starting point, we will split the dataset in two:  one dataset will contain the historical outcomes and the features that describe customers who churn or remain customers; the other dataset will represent current customers, some of whom may churn.
 
 2. [Train & Validate a Classification Model](https://github.com/jeffmaddocks/findChurn/blob/master/build%20churn%20model.ipynb). Once the data is prepared we will train and validate a classification model using the free and open source [H2O python module](https://docs.h2o.ai/h2o/latest-stable/h2o-py/docs/intro.html). This python module provides access to the H2O JVM, as well as its extensions, objects, machine-learning algorithms, and modeling support capabilities, such as basic munging and feature generation. We'll use a technique called [AutoML](https://docs.h2o.ai/h2o/latest-stable/h2o-py/docs/modeling.html#h2oautoml) to quickly identify the highest-performing model out of many options. 
