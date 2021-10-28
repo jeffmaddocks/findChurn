@@ -4,3 +4,4 @@ numpy
 pandas
 h2o
 matplotlib
+jupyterlab
