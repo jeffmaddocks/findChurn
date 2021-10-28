@@ -50,9 +50,7 @@ This example is in three parts:
 
 4. Configure your [Kaggle API credentials](https://github.com/Kaggle/kaggle-api).
 
-5. Install OpenJDK. The [installation steps vary based on your operating system](https://openjdk.java.net/install/).
-
-    Ubuntu:
+5. Install OpenJDK. The [installation steps vary based on your operating system](https://openjdk.java.net/install/). Ubuntu:
     ```
     sudo apt install default-jre
     ```
