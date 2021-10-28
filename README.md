@@ -25,21 +25,23 @@ This example is in three parts:
 
 1. [Prepare the data](https://github.com/jeffmaddocks/findChurn/blob/master/prepare%20data.ipynb). We start by spliting the Kaggle dataset in two:  one dataset will contain the historical outcomes and descriptive features used to train the model; the other dataset will represent current customers, some of whom may churn.
 
-2. [Train & Validate a Classification Model](https://github.com/jeffmaddocks/findChurn/blob/master/build%20churn%20model.ipynb). Once the data is prepared we will train and validate a classification model using the free and open source [H2O python module](https://docs.h2o.ai/h2o/latest-stable/h2o-py/docs/intro.html). This python module provides access to the H2O JVM, as well as its extensions, objects, machine-learning algorithms, and modeling support capabilities, such as basic munging and feature generation. We'll use a technique called [AutoML](https://docs.h2o.ai/h2o/latest-stable/h2o-py/docs/modeling.html#h2oautoml) to quickly identify the highest-performing model out of many options. 
+2. [Train & Validate a Classification Model](https://github.com/jeffmaddocks/findChurn/blob/master/build%20churn%20model.ipynb). Once the data is prepared we will train and validate a classification model using the free and open source [H2O python module](https://docs.h2o.ai/h2o/latest-stable/h2o-py/docs/intro.html). This python module provides access to the H2O JVM, machine-learning algorithms, feature generation, etc. We'll use a technique called [AutoML](https://docs.h2o.ai/h2o/latest-stable/h2o-py/docs/modeling.html#h2oautoml) to quickly identify the highest-performing model out of many options. 
 
-3. [Score Current Customers](https://github.com/jeffmaddocks/findChurn/blob/master/score%20current%20customers.ipynb). Now that we've built a high-performing classification model and saved it to disk, the final step is to score current customers. The result includes a predicted outcome, and a confidence score. In practice, we would exclude predictions with a low confidence score, and focus customer retention efforts on our most valuable customers who are also most likely to churn.
+3. [Score Current Customers](https://github.com/jeffmaddocks/findChurn/blob/master/score%20current%20customers.ipynb). Now that we've built a high-performing classification model and saved it to disk, the final step is to score current customers. The result includes a predicted outcome and a confidence score. In practice, we would exclude predictions with a low confidence score, and focus customer retention efforts on our most valuable customers who are also most likely to churn.
 
 ## Setup
 
-1. Download or clone this project into your working directory.
+1. Download or clone this project. If you choose to download, setup a working directory first. Alternatively, the "git clone" command will create a directory with the name 'findChurn' that contains this repository:
+    ```
+    git clone https://github.com/jeffmaddocks/findChurn
+    ```
 
-2. Setting up a virtual environment is a great idea! Let's start by opening a terminal/command prompt, changing directory into our working directory, and using virtualenv to create and activate the virtual environment - here's an example in bash:
+2. Once you have a working directory, setup a virtual environment and activate it  - here's an example in bash:
     ```
     mkdir env
     virtualenv -p python3 ./env
     source env/bin/activate
     ```
-    There's even [instructions for Windows](https://programwithus.com/learn/python/pip-virtualenv-windows)!
 
 3. Install required packages by running pip from the terminal: 
     ```
